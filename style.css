@@ -1,0 +1,2824 @@
+/* --- Variáveis CSS (Mantidas e expandidas) --- */
+:root {
+ /* ... (Variáveis originais) ... */
+ --padding-desktop: 80px 0;
+ --padding-mobile: 40px 0;
+}
+
+/* --- ESTILOS DO CABEÇALHO (TAREFA 1) --- */
+
+.main-header {
+ position: fixed; /* Fixa o cabeçalho no topo */
+ width: 100%;
+ background-color: #ffffff; /* Fundo branco para garantir legibilidade */
+ box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+ z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+ padding: 16px 0; /* Espaçamento vertical */
+}
+
+.header-content {
+ max-width: 1152px; /* Largura máxima, similar ao seu .container2 */
+ margin: 0 auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0 20px; /* Preenchimento nas laterais */
+}
+
+.logo {
+ color: #577590; /* Cor primária para o nome */
+ text-decoration: none;
+ font-family: "Playfair Display", serif;
+ font-size: 24px;
+ font-weight: 700;
+}
+
+.nav-menu {
+ display: flex;
+ gap: 24px;
+ align-items: center;
+}
+
+.nav-menu a {
+ color: #2d3436;
+ text-decoration: none;
+ font-family: "Inter-Medium", sans-serif;
+ font-size: 16px;
+ transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+ color: #f2a541; /* Cor de destaque ao passar o mouse */
+}
+
+.cta-nav-button {
+ background-color: #577590; /* Cor do botão Call to Action */
+ color: #ffffff !important;
+ padding: 8px 16px;
+ border-radius: 33554400px;
+ font-weight: 500;
+ border: 1px solid #577590;
+}
+
+.cta-nav-button:hover {
+ background-color: #40596e;
+}
+
+/* FIM ESTILOS DO CABEÇALHO */
+
+body {
+  margin: 0;
+}
+
+.app,
+.app * {
+  box-sizing: border-box;
+}
+.app {
+  max-width: 1152px;
+  margin: 0 auto;
+  position: relative;
+}
+.section {
+  background: #ffffff;
+  padding: 80px 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 768px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+.heading-2 {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 40px;
+  text-align: center;
+  position: relative;
+}
+.reas-de-atua-o {
+  color: #2d3436;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+.paragraph {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+}
+.atendimento-especializado-com-uma-abordagem-integr {
+  color: #6c7278;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.container2 {
+  max-width: 1152px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.card {
+  background: #fdf8f6;
+  border-radius: 16px;
+  border-style: solid;
+  border-color: rgba(87, 117, 144, 0.15);
+  border-width: 1px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.app2 {
+  background: rgba(87, 117, 144, 0.1);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  position: relative;
+}
+.icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  overflow: visible;
+}
+.app3 {
+  flex-shrink: 0;
+  width: 296.66px;
+  height: 24px;
+  position: relative;
+}
+.psicologia-cl-nica {
+  color: #2d3436;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.app4 {
+  flex: 1;
+  width: 296.66px;
+  position: relative;
+}
+.atendimento-terap-utico-para-adultos-e-adolescente {
+  color: #6c7278;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  width: 290px;
+}
+.card2 { background: #fdf8f6; border-radius: 16px; border-style: solid; border-color: rgba(87, 117, 144, 0.15); border-width: 1px; padding: 32px; display: flex; flex-direction: column; gap: 48px; align-items: flex-start; justify-content: flex-start; }
+.app5 {
+  background: rgba(242, 165, 65, 0.1);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  position: relative;
+}
+.icon2 {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  overflow: visible;
+}
+.app6 {
+  flex-shrink: 0;
+  width: 296.67px;
+  height: 24px;
+  position: relative;
+}
+.psicopedagogia {
+  color: #2d3436;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.app7 {
+  flex-shrink: 0;
+  width: 296.67px;
+  height: 96px;
+  position: relative;
+}
+.avalia-o-e-interven-o-em-dificuldades-de-aprendi {
+  color: #6c7278;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  width: 286px;
+}
+.card3 { background: #fdf8f6; border-radius: 16px; border-style: solid; border-color: rgba(87, 117, 144, 0.15); border-width: 1px; padding: 32px; display: flex; flex-direction: column; gap: 48px; align-items: flex-start; justify-content: flex-start; }
+.app8 {
+  background: #dfc67fda;;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  position: relative;
+}
+.icon3 {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  overflow: visible;
+}
+.psicologia-social {
+  color: #2d3436;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.app9 {
+  flex-shrink: 0;
+  width: 296.66px;
+  height: 96px;
+  position: relative;
+}
+.compreens-o-das-rela-es-interpessoais-din-micas {
+  color: #6c7278;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  width: 284px;
+}
+.section2 {
+    background: #ffffff;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 64px;
+}
+.container3 {
+ flex: 0 0 45%;
+ max-width: 552px;
+ height: auto;
+}
+.container4 {
+  background: rgba(87, 117, 144, 0.1);
+  border-radius: 33554400px;
+  width: auto;
+  height: auto;
+  padding: 4px 12px;
+  display: inline-block;
+}
+.paragraph2 {
+  width: auto;
+  height: auto;
+  margin: 0;
+  text-align: left;
+}
+.sobre-a-profissional {
+  color: #577590;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  white-space: nowrap;
+  line-height: normal;
+}
+.heading-22 {
+  width: 552px;
+  height: 40px;
+}
+.juliana-steckling {
+  color: #2d3436;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 52px;
+  line-height: 40px;
+  font-weight: 400;
+}
+.container5 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 552px;
+  height: 296px;
+  margin-top: 17px;
+}
+.paragraph3 {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 72px;
+  position: relative;
+}
+.com-mais-de-uma-d-cada-de-dedica-o-sa-de-mental {
+  color: #6c7278;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  width: 527px;
+}
+.paragraph4 {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 105px;
+  position: relative;
+}
+.acredito-que-cada-pessoa-possui-recursos-internos {
+  color: #6c7278;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  width: 551px;
+}
+.paragraph5 {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 96px;
+  position: relative;
+}
+.minha-abordagem-integra-diferentes-perspectivas-da {
+  color: #6c7278;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  width: 538px;
+}
+.container6 {
+  border-style: solid;
+  border-color: rgba(87, 117, 144, 0.15);
+  border-width: 1px 0px 0px 0px;
+  padding: 33px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 552px;
+  height: 205px;
+}
+.heading-4 {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 24px;
+  position: relative;
+}
+.forma-o-experi-ncia {
+  color: #2d3436;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 132px;
+  position: relative;
+}
+.list-item {
+  display: flex; align-items: center; gap: 12px; align-self: stretch;
+  flex-shrink: 0;
+  height: 24px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.icon4 {
+  width: 20px;
+  height: 20px;
+  overflow: visible;
+  display: flex
+}
+.text {
+  width: 251px;
+  height: 24px;
+  display: flex
+}
+.psic-loga-com-registro-ativo-no-crp {
+  color: #6c7278;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  width: auto;
+}
+.icon5 {
+  width: 20px;
+  height: 20px;
+  overflow: visible;
+}
+.text2 {
+  width: 237px;
+  height: 24px;
+}
+.especializa-o-em-psicopedagogia {
+  color: #6c7278;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  width: auto;
+}
+.icon6 {
+  width: 20px;
+  height: 20px;
+
+  overflow: visible;
+}
+.text3 {
+  width: 224px;
+  height: 24px;
+}
+.especialista-em-psicologia-social {
+  color: #6c7278;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  width: auto;
+}
+.icon7 {
+  width: 20px;
+  height: 20px;
+  overflow: visible;
+}
+.text4 {
+  width: 263px;
+  height: 24px;
+}
+.mais-de-10-anos-de-experi-ncia-cl-nica {
+  color: #6c7278;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  width: auto;
+}
+.container7 {
+    flex: 0 0 55%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container7 > div {
+    position: relative;
+    width: 100%;
+}
+
+
+.container8 {
+  background: linear-gradient(
+    135deg,
+    rgba(87, 117, 144, 0.2) 0%,
+    rgba(242, 165, 65, 0.2) 100%
+  );
+  border-radius: 24px;
+  width: 100%;
+  max-width: 584px;
+  height: auto;
+  aspect-ratio: 1 / 1.08;
+  filter: blur(40px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.container9 {
+  background: rgba(243, 202, 64, 0.15);
+  border-radius: 50%;
+  width: 96px;
+  height: 96px;
+  filter: blur(8px);
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  z-index: 2;
+}
+.container10 {
+  background: rgba(240, 138, 75, 0.12);
+  border-radius: 50%;
+  width: 128px;
+  height: 128px;
+  filter: blur(12px);
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+  z-index: 2;
+}
+.image-juliana-steckling-psic-loga {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    z-index: 10;
+}
+.section3 {
+  background: #ffffff; padding: 80px 20px;
+  height: 746.38px;
+  padding: 80px 0;
+}
+.como-funciona-o-atendimento {
+  color: #2d3436;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+.um-processo-simples-e-acolhedor-para-iniciar-sua-j {
+  color: #6c7278;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.container11 {
+  margin: 0 auto; max-width: 1024px; display: grid;
+  gap: 32px;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+}
+.container12 {
+  height: 216px;
+  position: relative;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+.container13 {
+  background: rgba(87, 117, 144, 0.1);
+  border-radius: 33554400px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+
+}
+.text5 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 13px;
+  height: 32px;
+  position: relative;
+}
+._1 {
+  color: #577590;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+.heading-3 {
+  width: 320px;
+  height: 24px;
+}
+.primeiro-contato {
+  color: #151616;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.paragraph6 {
+  width: 320px;
+  height: 96px;
+}
+.entre-em-contato-por-whats-app-e-mail-ou-formul-ri {
+  color: #6c7278;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  width: 311px;
+}
+.container14 {
+  height: 216px;
+  position: relative;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+.container15 {
+  background: rgba(242, 165, 65, 0.1);
+  border-radius: 33554400px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+}
+._2 {
+  color: #f2a541;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  position: relative;
+}
+.avalia-o-inicial {
+  color: #2d3436;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.na-primeira-sess-o-faremos-uma-escuta-acolhedora {
+  color: #6c7278;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  width: 309px;
+}
+.container16 {
+  height: 216px;
+  position: relative;
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+}
+.container17 {
+  background: rgba(240, 138, 75, 0.2);
+  border-radius: 33554400px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+}
+._3 {
+  color: #2d3436;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  position: relative;
+}
+.acompanhamento {
+  color: #2d3436;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.sess-es-regulares-presenciais-ou-online-com-dura {
+  color: #6c7278;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  width: 317px;
+}
+.container18 {
+  background: #fdf8f6;
+  margin: 0 auto; max-width: 768px; border-radius: 16px;
+  border-style: solid;
+  border-color: rgba(87, 117, 144, 0.15);
+  border-width: 1px;
+  padding: 33px 33px 1px 33px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 768px;
+
+}
+.container19 {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 92.38px;
+  position: relative;
+}
+.container20 {
+  background: rgba(87, 117, 144, 0.1);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+.icon8 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.container21 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  height: 92.38px;
+  position: relative;
+}
+.heading-42 {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 30px;
+  position: relative;
+}
+.modalidades-de-atendimento {
+  color: #2d3436;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+}
+.paragraph7 {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 54.38px;
+  position: relative;
+}
+.ofere-o-atendimento-presencial-em-consult-rio-conf {
+  color: #6c7278;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 27.2px;
+  font-weight: 400;
+  width: 615px;
+}
+.section4 {
+  background: #FDF8F6;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+}
+.container22 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  text-align: center;
+}
+.vamos-conversar {
+  color: #2d3436;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+
+}
+.d-o-primeiro-passo-em-dire-o-ao-seu-bem-estar-em {
+  color: #6c7278;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.card4 {
+  background: #fdf8f6;
+    border-radius: 16px;
+    border: 1px solid rgba(87, 117, 144, 0.15);
+    padding: 48px; /* Padding igual em todos os lados */
+    display: flex;
+    flex-direction: column;
+    gap: 24px; /* Espaço entre o formulário e a seção de contato direto */
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    height: auto; /* Remove a altura fixa */
+}
+.app10 {
+  background: #577590; /* Cor azul primária */
+  color: #ffffff;
+  border: none;
+  border-radius: 33554400px; /* Borda arredondada */
+  padding: 14px 28px;
+  font-weight: 500;
+  cursor: pointer;
+  align-self: flex-start; /* Alinha o botão à esquerda */
+  flex: 1;
+  width: 798px;
+  position: relative;
+}
+.container23 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.container24 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 58px;
+  position: relative;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+.primitive-label {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 14px;
+  position: relative;
+}
+.nome-completo {
+  color: #2d3436;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  position: relative;
+}
+.input {
+  background: #ffffff;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgba(87, 117, 144, 0.15);
+  border-width: 1px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 36px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.seu-nome {
+  color: #6c7278;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+.container25 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 58px;
+  position: relative;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+.telefone-whats-app {
+  color: #2d3436;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  position: relative;
+}
+._00-00000-0000 {
+  color: #6c7278;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+.container26 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 798px;
+  height: 58px;
+}
+.e-mail {
+  color: #2d3436;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  position: relative;
+}
+.seu-email-com {
+  color: #6c7278;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+.container27 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 798px;
+  height: 142px;
+}
+.mensagem {
+  color: #2d3436;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  position: relative;
+}
+.textarea {
+  background: #ffffff;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgba(87, 117, 144, 0.15);
+  border-width: 1px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 120px;
+  position: relative;
+  overflow: hidden;
+  font-size: 16px;
+  box-sizing: border-box;
+  width: 100%;
+  resize: none;
+}
+.conte-me-um-pouco-sobre-o-que-voc-est-buscando-no-atendimento-psicol-gico {
+  color: #6c7278;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  position: relative;
+}
+.button {
+  background: #577590; /* Cor azul primária */
+    color: #ffffff;
+    border: none;
+    border-radius: 33554400px; /* Borda arredondada */
+    padding: 14px 28px;
+    font-weight: 500;
+    cursor: pointer;
+    align-self: flex-start; /* Alinha o botão à esquerda */
+}
+
+.app10 .button:hover {
+    background: #40596e;
+}
+
+.icon9 {
+  width: 16px;
+  height: 16px;
+  overflow: visible;
+}
+.enviar-mensagem {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.app11 {
+  border-style: solid;
+  border-color: rgba(87, 117, 144, 0.15);
+  border-width: 1px 0px 0px 0px;
+  padding: 33px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 798px;
+  height: 109px;
+  position: relative;
+}
+.paragraph8 {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 24px;
+  position: relative;
+}
+.ou-entre-em-contato-diretamente {
+  color: #6c7278;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.container28 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 36px;
+  position: relative;
+}
+.button2 {
+  background: #fdf8f6;
+  border-radius: 33554400px;
+  border-style: solid;
+  border-color: rgba(87, 117, 144, 0.2);
+  border-width: 1px;
+  padding: 1px;
+  flex-shrink: 0;
+  width: 123px;
+  height: 36px;
+  position: relative;
+}
+.icon10 {
+  width: 16px;
+  height: 16px;
+  overflow: visible;
+}
+.whats-app {
+  color: #2d3436;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.button3 {
+  background: #fdf8f6;
+  border-radius: 33554400px;
+  border-style: solid;
+  border-color: rgba(87, 117, 144, 0.2);
+  border-width: 1px;
+  padding: 1px;
+  flex-shrink: 0;
+  width: 98px;
+  height: 36px;
+  position: relative;
+}
+.app12 {
+  width: 16px;
+  height: 16px;
+  overflow: visible;
+}
+
+/* Contact CTA Styles */
+.contact-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.cta-button {
+  background: #f08a4b;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 18px 36px;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(240, 138, 75, 0.3);
+}
+
+.cta-button:hover {
+  background: #e57a3b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(240, 138, 75, 0.4);
+}
+
+.contact-options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  opacity: 1;
+  max-height: 500px;
+  transition: all 0.4s ease;
+}
+
+.contact-options.hidden {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.contact-link {
+  background: #fdf8f6;
+  border: 1px solid rgba(87, 117, 144, 0.15);
+  border-radius: 12px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+  border-color: rgba(87, 117, 144, 0.3);
+  transform: translateX(8px);
+  box-shadow: 0 4px 12px rgba(87, 117, 144, 0.1);
+}
+
+.contact-link svg {
+  flex-shrink: 0;
+}
+
+.contact-link div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-link strong {
+  color: #2d3436;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contact-link span {
+  color: #6c7278;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+}
+
+.contact-link.whatsapp:hover {
+  background: rgba(37, 211, 102, 0.05);
+  border-color: #25D366;
+}
+
+.contact-link.email:hover {
+  background: rgba(87, 117, 144, 0.05);
+  border-color: #577590;
+}
+
+.contact-link.instagram:hover {
+  background: rgba(228, 64, 95, 0.05);
+  border-color: #E4405F;
+}
+
+.section5 { 
+ position: relative;
+ background: #FDF8F6;
+ width: 100%;
+ min-height: 626px;
+ overflow: hidden;
+ padding-bottom: 80px;
+ padding-left: 0;
+ padding-right: 0;
+ padding: 180px 0 80px 0;
+}
+.container29 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Deve ter 100% da largura da .section5 */
+  height: 100%; /* Deve ter 100% da altura da .section5 */
+  overflow: hidden;
+}
+.container30 {
+  background: rgba(242, 165, 65, 0.1);
+  border-radius: 33554400px;
+  width: 384px; /* Volta o tamanho original para ser um "blob" */
+  height: 384px;
+  filter: blur(40px);
+  position: absolute; /* Mantenha absoluto */
+  top: 5%; /* Posição no topo esquerdo */
+  left: 5%;
+}
+.container31 {
+ background: rgba(87, 117, 144, 0.08);
+ border-radius: 33554400px;
+ width: 320px;
+ height: 320px;
+ filter: blur(24px);
+ position: absolute; /* Mantenha absoluto */
+ top: -5%; /* Posição superior para simular o canto */
+ right: -5%;
+}
+.container32 {
+ background: rgba(240, 138, 75, 0.15);
+ border-radius: 33554400px;
+ width: 128px;
+ height: 128px;
+ position: absolute; 
+ bottom: 40%;
+ left: 30%;
+
+}
+.container33 {
+ background: rgba(240, 138, 75, 0.15);
+ border-radius: 33554400px;
+ width: 128px;
+ height: 128px;
+ position: absolute; 
+ bottom: 40%;
+ left: 30%;
+}
+
+.container34 {
+ background: rgba(240, 138, 75, 0.15);
+ border-radius: 33554400px;
+ width: 128px;
+ height: 128px;
+ position: absolute; 
+ bottom: 40%;
+ left: 30%;
+}
+
+.container35 { 
+ max-width: 896px; 
+ margin: 0 auto;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ gap: 24px;
+ text-align: center;
+ position: relative;
+ width: 100%;
+ z-index: 10;
+}
+
+.heading-1 {
+  width: 768px;
+  height: auto;
+  max-width: 768px;
+  margin-bottom: 8px;
+}
+.psicologia-com-acolhimento-e-10-anos-de-experi-nci {
+  color: #2d3436;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 52px;
+  line-height: 64px;
+  font-weight: 700;
+  width: 753px;
+}
+.paragraph9 {
+  width: 672px;
+  height: 84px;
+  max-width: 672px;
+  margin-bottom: 16px;
+}
+.especialista-em-psicologia-cl-nica-psicopedagogia {
+  font-size: 20px;
+  line-height: 32px;
+  color: #6c7278;
+
+  width: 642px;
+}
+.container36 {
+ display: flex;
+ flex-direction: row;
+ gap: 20px;
+ justify-content: center; /* Centraliza os botões */
+}
+
+.button4 {
+    background: #577590;
+    border-radius: 33554400px;
+    padding: 14px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+.button4:hover {
+    background: #40596e;
+}
+
+.icon11 {
+  width: 16px;
+  height: 16px;
+  overflow: visible;
+}
+.agendar-sua-primeira-sess-o {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.button5 {
+    background: #fdf8f6;
+    border: 1px solid #577590;
+    border-radius: 33554400px;
+    padding: 14px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.button5:hover {
+    background: #f0f0f0;
+}
+.conhecer-mais {
+  color: #2d3436;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  position: relative;
+}
+.container37 {
+ display: flex;
+ flex-direction: row;
+ gap: 32px; /* Aumente o espaço entre os ícones */
+ justify-content: center; /* Centraliza os ícones */
+ padding-top: 32px;
+}
+
+.container37 svg path { 
+    stroke: #577590; 
+}
+
+.container38 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.icon12 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.text6 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  height: 20px;
+  position: relative;
+}
+.mais-de-10-anos-de-experi-ncia {
+  color: #6c7278;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  position: relative;
+}
+.container39 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.icon13 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.atendimento-presencial-e-online {
+  color: #6c7278;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  position: relative;
+}
+.container40 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.icon14 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.acolhimento {
+  color: #6c7278;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  position: relative;
+}
+.section6 { padding: 80px 20px;
+  overflow: hidden;
+  padding: 80px 0;
+}
+.container41 {
+  width: 1534px;
+  height: 607px;
+  overflow: hidden;
+}
+.container42 {
+  background: rgba(242, 165, 65, 0.08);
+  border-radius: 33554400px;
+  width: 384px;
+  height: 384px;
+  filter: blur(64px);
+}
+.container43 {
+  background: rgba(87, 117, 144, 0.1);
+  border-radius: 33554400px;
+  width: 288px;
+  height: 288px;
+  filter: blur(40px);
+}
+.container44 {
+  background: rgba(243, 202, 64, 0.12);
+  border-radius: 33554400px;
+  width: 96px;
+  height: 96px;
+}
+.container45 {
+  background: rgba(240, 138, 75, 0.1);
+  border-radius: 33554400px;
+  width: 160px;
+  height: 160px;
+  filter: blur(12px);
+}
+.container46 {
+  background: rgba(215, 138, 118, 0.08);
+  border-radius: 40px;
+  width: 252.37px;
+  height: 203.08px;
+}
+.container47 { margin: 0 auto;
+  width: 1470px;
+  height: 447px;
+  margin: 0 auto;
+}
+.container48 {
+  margin: 0 auto 48px auto;
+  text-align: center;
+  max-width: 768px;
+}
+.o-que-dizem-meus-pacientes {
+  color: #2d3436;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+.hist-rias-reais-de-transforma-o-e-crescimento-pes {
+  color: #6c7278;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.o-que-dizem-meus-pacientes,
+.hist-rias-reais-de-transforma-o-e-crescimento-pes {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container49 { 
+  max-width: 1152px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+  gap: 32px; /* Espaço entre as colunas */
+}
+.card5 {
+ display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid rgba(87, 117, 144, 0.15);
+    padding: 32px;
+    /* Ajuste para garantir que todos tenham a mesma altura visualmente */
+    height: 100%; 
+    min-height: 320px; /* Um mínimo razoável para a proporção */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card5:hover, .card6:hover, .card7:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-avatar {
+  margin: 0 auto;
+}
+
+.avatar-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.app13 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 296.66px;
+  height: 233px;
+}
+.container50 {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 20px;
+  position: relative;
+}
+.icon15 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.icon16 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.icon17 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.icon18 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.icon19 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.paragraph10 {
+  font-size: 16px;
+  line-height: 28px;
+  color: #2d3436; /* Texto em cor mais escura para o depoimento em si */
+  font-style: italic;
+}
+.a-juliana-me-ajudou-a-entender-e-trabalhar-minha {
+  color: #6c7278;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  width: 287px;
+}
+.container51 {
+  border-style: solid;
+  border-color: rgba(87, 117, 144, 0.15);
+  border-width: 1px 0px 0px 0px;
+  padding: 17px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 61px;
+  position: relative;
+  padding-top: 17px;
+  margin-top: auto;
+  border-top: 1px solid rgba(87, 117, 144, 0.15);
+}
+.m-s {
+  color: #2d3436;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.paragraph11 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 20px;
+  position: relative;
+}
+.paciente-h-2-anos {
+  color: #6c7278;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+.icon20 {
+  width: 40px;
+  height: 40px;
+  overflow: visible;
+}
+.card6 {
+  display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid rgba(87, 117, 144, 0.15);
+    padding: 32px;
+    /* Ajuste para garantir que todos tenham a mesma altura visualmente */
+    height: 100%; 
+    min-height: 320px; /* Um mínimo razoável para a proporção */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.app14 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 296.67px;
+  height: 233px;
+}
+.icon21 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.icon22 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.icon23 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.icon24 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.icon25 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.como-m-e-estava-perdida-com-as-dificuldades-de-a {
+  color: #6c7278;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  width: 264px;
+}
+.a-r {
+  color: #2d3436;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.m-e-de-paciente {
+  color: #6c7278;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+.icon26 {
+  width: 40px;
+  height: 40px;
+  overflow: visible;
+}
+.card7 {
+  display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid rgba(87, 117, 144, 0.15);
+    padding: 32px;
+    /* Ajuste para garantir que todos tenham a mesma altura visualmente */
+    height: 100%; 
+    min-height: 320px; /* Um mínimo razoável para a proporção */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.icon27 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.icon28 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.icon29 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.icon30 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.icon31 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.finalmente-encontrei-uma-profissional-que-entende {
+  color: #6c7278;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  width: 287px;
+}
+.l-p {
+  color: #2d3436;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.paciente-h-1-ano {
+  color: #6c7278;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+.icon32 {
+  width: 40px;
+  height: 40px;
+
+  overflow: visible;
+}
+.footer {
+  border-style: solid;
+  border-color: rgba(87, 117, 144, 0.15);
+  border-width: 1px 0px 0px 0px;
+  padding: 48px 0;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+.container52 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.container53 {
+  background: rgba(87, 117, 144, 0.08);
+  border-radius: 33554400px;
+  width: 256px;
+  height: 256px;
+  filter: blur(40px);
+}
+.container54 {
+  background: rgba(242, 165, 65, 0.1);
+  border-radius: 33554400px;
+  width: 224px;
+  height: 224px;
+
+  filter: blur(24px);
+}
+.container55 {
+  background: rgba(243, 202, 64, 0.08);
+  border-radius: 33554400px;
+  width: 128px;
+  height: 128px;
+}
+.container56 {
+  background: rgba(240, 138, 75, 0.08);
+  border-radius: 32px;
+  width: 226.27px;
+  height: 226.27px;
+}
+.container57 { 
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1152px;
+  height: 52px;
+  position: relative;
+}
+.container58 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 370px;
+  height: 52px;
+  position: relative;
+}
+.container59 {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 24px;
+  position: relative;
+}
+.juliana-steckling2 {
+  color: #2d3436;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.psic-loga-psicopedagoga-especialista-em-psicol {
+  color: #6c7278;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  position: relative;
+}
+.container60 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 334px;
+  height: 44px;
+  position: relative;
+}
+.crp-00-00000 {
+  color: #6c7278;
+  text-align: right;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+._2025-juliana-steckling-todos-os-direitos-reserv {
+  color: #6c7278;
+  text-align: right;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  position: relative;
+}
+
+/* --- ESTILOS PARA OS NOVOS BOTÕES DE CONTATO --- */
+
+.contact-cta-links {
+    display: grid;
+    gap: 24px;
+    width: 100%;
+    margin-top: 24px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1152px;
+    margin: 24px auto 0 auto;
+    padding: 0 20px;
+}
+
+.cta-link {
+    background: #ffffff;
+    border: 1px solid rgba(87, 117, 144, 0.15);
+    border-radius: 12px;
+    padding: 24px 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cta-link:hover {
+    box-shadow: 0 4px 12px rgba(87, 117, 144, 0.1);
+    transform: translateY(-2px);
+}
+
+.cta-link svg {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    display: block; 
+    margin: 0 auto;
+}
+
+.link-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.link-text strong {
+    align-items: center;
+    color: #2d3436;
+    font-family: "Inter-Medium", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.link-text span {
+    color: #6c7278;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 14px;
+}
+
+/* Cores específicas para hover (você já tinha algo similar, mas vamos simplificar usando as novas classes) */
+.cta-link.whatsapp:hover {
+    border-color: #25D366;
+    background: rgba(37, 211, 102, 0.05);
+}
+.cta-link.email:hover {
+    border-color: #577590;
+    background: rgba(87, 117, 144, 0.05);
+}
+.cta-link.instagram:hover {
+    border-color: #E4405F;
+    background: rgba(228, 64, 95, 0.05);
+}
+
+
+/* ======================================= */
+/* ====== RESPONSIVIDADE (MOBILE) ====== */
+/* ======================================= */
+
+/* --- TABLET E DISPOSITIVOS MENORES (até 768px) --- */
+@media (max-width: 768px) {
+    
+    /* AJUSTES GLOBAIS */
+    .app {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* PADDING CONSISTENTE PARA TODAS AS SEÇÕES */
+    .section,
+    .section2,
+    .section3,
+    .section4,
+    .section5,
+    .section6,
+    .footer {
+        padding: 64px 20px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    /* SEÇÃO HERO */
+    .section5 {
+        padding-top: calc(56px + 48px);
+        padding-bottom: 48px;
+        min-height: auto;
+    }
+
+    .psicologia-com-acolhimento-e-10-anos-de-experi-nci {
+        font-size: 36px;
+        line-height: 44px;
+        width: 100%;
+        white-space: normal;
+    }
+
+    .especialista-em-psicologia-cl-nica-psicopedagogia {
+        font-size: 18px;
+        line-height: 28px;
+        width: 100%;
+    }
+
+    .container36 {
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .heading-1,
+    .paragraph9 {
+        width: 100%;
+    }
+
+    .container37 {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    /* SEÇÃO ÁREAS DE ATUAÇÃO */
+    .container2 {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .card,
+    .card2,
+    .card3 {
+        padding: 24px;
+        gap: 24px;
+    }
+
+    .atendimento-terap-utico-para-adultos-e-adolescente,
+    .avalia-o-e-interven-o-em-dificuldades-de-aprendi,
+    .compreens-o-das-rela-es-interpessoais-din-micas {
+        width: 100%;
+        font-size: 14px;
+        line-height: 22px;
+        white-space: normal;
+    }
+
+    .app4,
+    .app7,
+    .app9 {
+        width: 100%;
+        height: auto;
+    }
+
+    /* ========================================= */
+    /* SEÇÃO SOBRE - OTIMIZAÇÃO COMPLETA MOBILE */
+    /* ========================================= */
+    
+    .section2 {
+        flex-direction: column;
+        gap: 40px;
+        padding: 64px 20px;
+    }
+
+    /* Container de Texto */
+    .container3 {
+        flex: 1;
+        width: 100%;
+        max-width: 100%;
+        order: 2;
+    }
+
+    /* Container da Imagem */
+    .container7 {
+        flex: 1;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        order: 1;
+        margin-bottom: 32px;
+    }
+
+    /* Imagem - Responsiva Mobile */
+    .image-juliana-steckling-psic-loga {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+
+    /* Efeitos de Fundo - Ajustados para Mobile */
+    .container8 {
+        max-width: 90%;
+        aspect-ratio: 1 / 1;
+    }
+
+    .container9,
+    .container10 {
+        display: none;
+    }
+
+    /* Badge "Sobre a Profissional" */
+    .container4 {
+        margin-bottom: 16px;
+    }
+
+    .sobre-a-profissional {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    /* Título Principal - Juliana Steckling */
+    .juliana-steckling {
+        font-size: 32px;
+        line-height: 1.25;
+        margin-bottom: 24px;
+    }
+
+    .heading-22 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 24px;
+    }
+
+    /* Container de Parágrafos */
+    .container5 {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        gap: 20px;
+        margin-bottom: 32px;
+    }
+
+    /* Parágrafos de Texto */
+    .paragraph3,
+    .paragraph4,
+    .paragraph5 {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .com-mais-de-uma-d-cada-de-dedica-o-sa-de-mental,
+    .acredito-que-cada-pessoa-possui-recursos-internos,
+    .minha-abordagem-integra-diferentes-perspectivas-da {
+        width: 100%;
+        white-space: normal;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* Seção Formação & Experiência */
+    .container6 {
+        width: 100%;
+        height: auto;
+        margin-top: 32px;
+        padding-top: 32px;
+        gap: 20px;
+    }
+
+    .heading-4 {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .forma-o-experi-ncia {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    /* Lista de Itens */
+    .list {
+        height: auto;
+        gap: 16px;
+    }
+
+    .list-item {
+        white-space: normal;
+        align-items: flex-start;
+        height: auto;
+        gap: 12px;
+        padding: 8px 0;
+    }
+
+    .icon4,
+    .icon5,
+    .icon6,
+    .icon7 {
+        flex-shrink: 0;
+        margin-top: 2px;
+    }
+
+    .text,
+    .text2,
+    .text3,
+    .text4 {
+        width: 100%;
+        height: auto;
+        flex: 1;
+    }
+
+    .psic-loga-com-registro-ativo-no-crp,
+    .especializa-o-em-psicopedagogia,
+    .especialista-em-psicologia-social,
+    .mais-de-10-anos-de-experi-ncia-cl-nica {
+        white-space: normal;
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* SEÇÃO COMO FUNCIONA */
+    .section3 {
+        padding: 64px 20px;
+        height: auto;
+    }
+
+    /* Título Principal */
+    .como-funciona-o-atendimento {
+        font-size: 30px;
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    /* Subtítulo */
+    .um-processo-simples-e-acolhedor-para-iniciar-sua-j {
+        font-size: 18px;
+        line-height: 1.6;
+        text-align: center;
+        margin-bottom: 48px;
+        width: 100%;
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Grid de Etapas - Coluna Única */
+    .container11 {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        max-width: 100%;
+    }
+
+    /* Cards de Etapa */
+    .container12,
+    .container14,
+    .container16 {
+        grid-column: auto;
+        grid-row: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    /* Círculos dos Números */
+    .container13,
+    .container15,
+    .container17 {
+        width: 56px;
+        height: 56px;
+        flex-shrink: 0;
+    }
+
+    /* Números das Etapas */
+    .text5 {
+        width: auto;
+        height: auto;
+    }
+
+    ._1,
+    ._2,
+    ._3 {
+        font-size: 22px;
+        line-height: 1.2;
+    }
+
+    /* Títulos das Etapas */
+    .heading-3 {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .primeiro-contato,
+    .avalia-o-inicial,
+    .acompanhamento {
+        font-size: 20px;
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    /* Descrições das Etapas */
+    .paragraph6 {
+        width: 100%;
+        height: auto;
+    }
+
+    .entre-em-contato-por-whats-app-e-mail-ou-formul-ri,
+    .na-primeira-sess-o-faremos-uma-escuta-acolhedora,
+    .sess-es-regulares-presenciais-ou-online-com-dura {
+        width: 100%;
+        font-size: 15px;
+        line-height: 1.6;
+        text-align: center;
+        white-space: normal;
+    }
+
+    /* Card "Modalidades de Atendimento" */
+    .container18 {
+        width: 100%;
+        max-width: 100%;
+        padding: 28px 24px;
+    }
+
+    .container19 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        gap: 16px;
+    }
+
+    .container20 {
+        flex-shrink: 0;
+    }
+
+    .container21 {
+        height: auto;
+        width: 100%;
+    }
+
+    .heading-42 {
+        height: auto;
+        text-align: center;
+    }
+
+    .modalidades-de-atendimento {
+        font-size: 18px;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .paragraph7 {
+        height: auto;
+    }
+
+    .ofere-o-atendimento-presencial-em-consult-rio-conf {
+        width: 100%;
+        font-size: 15px;
+        line-height: 1.6;
+        text-align: center;
+        white-space: normal;
+    }
+
+    /* SEÇÃO CONTATO */
+    .vamos-conversar {
+        font-size: 36px;
+        line-height: 44px;
+        width: 100%;
+    }
+
+    .contact-cta-links {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        gap: 16px;
+    }
+
+    /* SEÇÃO DEPOIMENTOS */
+    .container49 {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    /* RODAPÉ */
+    .container57 {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 24px;
+        text-align: center;
+    }
+
+    .container58,
+    .container60 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .crp-00-00000,
+    ._2025-juliana-steckling-todos-os-direitos-reserv {
+        text-align: center;
+    }
+}
+
+/* --- SMARTPHONES PEQUENOS (até 480px) --- */
+@media (max-width: 480px) {
+    
+    /* PADDING REDUZIDO PARA TELAS MUITO PEQUENAS */
+    .section,
+    .section2,
+    .section3,
+    .section4,
+    .section5,
+    .section6,
+    .footer {
+        padding: 48px 16px;
+    }
+
+    /* SEÇÃO HERO - AJUSTES MAIS AGRESSIVOS */
+    .section5 {
+        padding-top: calc(56px + 32px);
+        padding-bottom: 32px;
+    }
+
+    .psicologia-com-acolhimento-e-10-anos-de-experi-nci {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .especialista-em-psicologia-cl-nica-psicopedagogia {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* TÍTULOS DE SEÇÃO */
+    .reas-de-atua-o,
+    .como-funciona-o-atendimento,
+    .vamos-conversar,
+    .o-que-dizem-meus-pacientes {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    /* ========================================= */
+    /* SEÇÃO SOBRE - AJUSTES PARA TELAS PEQUENAS */
+    /* ========================================= */
+    
+    .section2 {
+        padding: 48px 16px;
+        gap: 32px;
+    }
+
+    /* Título Juliana Steckling - Menor */
+    .juliana-steckling {
+        font-size: 28px;
+        line-height: 1.3;
+        margin-bottom: 20px;
+    }
+
+    /* Badge Sobre */
+    .sobre-a-profissional {
+        font-size: 13px;
+    }
+
+    /* Parágrafos - Fonte Menor */
+    .com-mais-de-uma-d-cada-de-dedica-o-sa-de-mental,
+    .acredito-que-cada-pessoa-possui-recursos-internos,
+    .minha-abordagem-integra-diferentes-perspectivas-da {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .container5 {
+        gap: 16px;
+        margin-bottom: 28px;
+    }
+
+    .paragraph3,
+    .paragraph4,
+    .paragraph5 {
+        margin-bottom: 16px;
+    }
+
+    /* Formação & Experiência */
+    .container6 {
+        margin-top: 28px;
+        padding-top: 28px;
+    }
+
+    .forma-o-experi-ncia {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    /* Lista de Itens - Mais Compacta */
+    .list {
+        gap: 12px;
+    }
+
+    .list-item {
+        gap: 10px;
+        padding: 6px 0;
+    }
+
+    .psic-loga-com-registro-ativo-no-crp,
+    .especializa-o-em-psicopedagogia,
+    .especialista-em-psicologia-social,
+    .mais-de-10-anos-de-experi-ncia-cl-nica {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* Imagem */
+    .container7 {
+        margin-bottom: 24px;
+    }
+
+    /* ========================================= */
+    /* SEÇÃO COMO FUNCIONA - AJUSTES PARA MOBILE PEQUENO */
+    /* ========================================= */
+
+    .section3 {
+        padding: 48px 16px;
+    }
+
+    /* Título */
+    .como-funciona-o-atendimento {
+        font-size: 26px;
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: 16px;
+        width: 100%;
+    }
+
+    /* Subtítulo */
+    .um-processo-simples-e-acolhedor-para-iniciar-sua-j {
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: center;
+        margin-bottom: 40px;
+        width: 100%;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Grid de Etapas */
+    .container11 {
+        gap: 36px;
+    }
+
+    /* Círculos Menores */
+    .container13,
+    .container15,
+    .container17 {
+        width: 48px;
+        height: 48px;
+    }
+
+    ._1,
+    ._2,
+    ._3 {
+        font-size: 20px;
+    }
+
+    /* Títulos das Etapas */
+    .primeiro-contato,
+    .avalia-o-inicial,
+    .acompanhamento {
+        font-size: 18px;
+    }
+
+    /* Descrições */
+    .entre-em-contato-por-whats-app-e-mail-ou-formul-ri,
+    .na-primeira-sess-o-faremos-uma-escuta-acolhedora,
+    .sess-es-regulares-presenciais-ou-online-com-dura {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* Card Modalidades */
+    .container18 {
+        padding: 24px 20px;
+    }
+
+    .modalidades-de-atendimento {
+        font-size: 17px;
+    }
+
+    .ofere-o-atendimento-presencial-em-consult-rio-conf {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* BOTÕES - LARGURA TOTAL */
+    .button4,
+    .button5,
+    .cta-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* CARDS - PADDING REDUZIDO */
+    .card,
+    .card2,
+    .card3,
+    .card5,
+    .card6,
+    .card7 {
+        padding: 20px;
+    }
+
+    /* HEADER - AJUSTE PARA MOBILE */
+    .main-header {
+        padding: 12px 0;
+    }
+
+    .header-content {
+        padding: 0 16px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-menu {
+        gap: 16px;
+    }
+
+    .nav-menu a {
+        font-size: 14px;
+    }
+
+    /* CONTAINER HERO */
+    .container35 {
+        gap: 16px;
+    }
+
+    .container36 {
+        gap: 12px;
+    }
+
+    .container37 {
+        gap: 12px;
+    }
+}
