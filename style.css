@@ -2130,7 +2130,6 @@ body {
     font-size: 14px;
 }
 
-/* Cores específicas para hover (você já tinha algo similar, mas vamos simplificar usando as novas classes) */
 .cta-link.whatsapp:hover {
     border-color: #25D366;
     background: rgba(37, 211, 102, 0.05);
@@ -2145,14 +2144,41 @@ body {
 }
 
 
+/* ============================= */
+/* ===== SCROLL REVEAL FX ===== */
+/* ============================= */
+
+/* Estado inicial: elemento oculto e levemente deslocado para baixo */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
+}
+
+/* Estado revelado: totalmente visível e no lugar */
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Acessibilidade: respeita redução de movimento do sistema */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+
 /* ======================================= */
 /* ====== RESPONSIVIDADE (MOBILE) ====== */
 /* ======================================= */
 
 /* --- TABLET E DISPOSITIVOS MENORES (até 768px) --- */
 @media (max-width: 768px) {
-    
-    /* AJUSTES GLOBAIS */
     .app {
         max-width: 100%;
         padding: 0;
@@ -2174,7 +2200,8 @@ body {
 
     /* SEÇÃO HERO */
     .section5 {
-        padding-top: calc(56px + 48px);
+    /* Aumentado para maior afastamento do header fixo no mobile/tablet */
+    padding-top: 130px; /* antes: calc(56px + 48px) */
         padding-bottom: 48px;
         min-height: auto;
     }
@@ -2207,6 +2234,20 @@ body {
         flex-direction: column;
         gap: 16px;
     }
+
+    /* OCULTAR BLOB DE FUNDO NO MOBILE */
+    .container56 {
+        display: none;
+    }
+
+  /* HEADER - TIPOGRAFIA (TABLET E MOBILE) */
+  .logo {
+    font-size: 10px;
+  }
+
+  .nav-menu a {
+    font-size: 12px;
+  }
 
     /* SEÇÃO ÁREAS DE ATUAÇÃO */
     .container2 {
@@ -2583,6 +2624,11 @@ body {
 /* --- SMARTPHONES PEQUENOS (até 480px) --- */
 @media (max-width: 480px) {
     
+    /* OCULTAR BLOB DE FUNDO NO MOBILE */
+    .container56 {
+        display: none;
+    }
+
     /* PADDING REDUZIDO PARA TELAS MUITO PEQUENAS */
     .section,
     .section2,
@@ -2596,7 +2642,8 @@ body {
 
     /* SEÇÃO HERO - AJUSTES MAIS AGRESSIVOS */
     .section5 {
-        padding-top: calc(56px + 32px);
+    /* Afastamento otimizado para header menor em smartphones */
+    padding-top: 110px; /* antes: calc(56px + 32px) */
         padding-bottom: 32px;
     }
 
@@ -2797,17 +2844,17 @@ body {
         padding: 0 16px;
     }
 
-    .logo {
-        font-size: 20px;
-    }
+  .logo {
+    font-size: 18px;
+  }
 
     .nav-menu {
         gap: 16px;
     }
 
-    .nav-menu a {
-        font-size: 14px;
-    }
+  .nav-menu a {
+    font-size: 13px;
+  }
 
     /* CONTAINER HERO */
     .container35 {

@@ -92,3 +92,90 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// Scroll Reveal com Intersection Observer
+document.addEventListener('DOMContentLoaded', () => {
+  const prefersReduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Seletores que queremos animar automaticamente
+  const autoSelectors = [
+    // Seções principais
+    '.section', '.section2', '.section3', '.section4', '.section5', '.section6',
+    // Títulos
+    '.heading-1', '.heading-2', '.heading-22', '.heading-3', '.heading-4',
+    '.como-funciona-o-atendimento', '.vamos-conversar', '.o-que-dizem-meus-pacientes',
+    // Cards principais
+    '.card', '.card2', '.card3', '.card4', '.card5', '.card6', '.card7',
+    // Containers de etapas e conteúdo
+    '.container12', '.container14', '.container16', '.container18',
+    // Container de áreas (se quiser animar a seção inteira, não os cards individuais)
+    '.container2 > .card', '.container2 > .card2', '.container2 > .card3',
+    // Container de depoimentos
+    '.container49 > .card5', '.container49 > .card6', '.container49 > .card7'
+  ];
+
+  // Coleta elementos já marcados explicitamente no HTML
+  const explicit = Array.from(document.querySelectorAll('.scroll-reveal'));
+
+  // Coleta elementos baseados nos seletores automáticos
+  const autos = autoSelectors
+    .flatMap(sel => {
+      try {
+        return Array.from(document.querySelectorAll(sel));
+      } catch (e) {
+        console.warn('Seletor inválido:', sel);
+        return [];
+      }
+    })
+    .filter(el => !el.classList.contains('scroll-reveal'))
+    .filter((el, index, self) => self.indexOf(el) === index); // Remove duplicatas
+
+  const allTargets = [...explicit, ...autos];
+  
+  // Debug: mostra quantos elementos serão animados
+  console.log(`Scroll Reveal: ${allTargets.length} elementos serão animados`);
+  
+  if (!allTargets.length) {
+    console.warn('Nenhum elemento encontrado para scroll reveal');
+    return;
+  }
+
+  // Se o usuário prefere movimento reduzido, mostra tudo imediatamente
+  if (prefersReduce) {
+    allTargets.forEach(el => el.classList.add('revealed'));
+    console.log('Prefers-reduced-motion ativo: elementos revelados sem animação');
+    return;
+  }
+
+  // Adiciona a classe base aos elementos automáticos
+  autos.forEach(el => el.classList.add('scroll-reveal'));
+
+  // Configura o observer
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        
+        // Suporte a delay via atributo data-reveal-delay
+        const delay = el.getAttribute('data-reveal-delay');
+        if (delay) {
+          el.style.transitionDelay = delay;
+        }
+        
+        // Adiciona a classe revealed para ativar a animação
+        el.classList.add('revealed');
+        
+        // Para de observar este elemento (anima apenas uma vez)
+        obs.unobserve(el);
+      }
+    });
+  }, {
+    threshold: 0.1, // 10% do elemento visível
+    rootMargin: '0px 0px -50px 0px' // Começa a animar um pouco antes
+  });
+
+  // Observa todos os elementos
+  allTargets.forEach(el => observer.observe(el));
+  
+  console.log('Scroll Reveal ativado! Role a página para ver o efeito.');
+});
